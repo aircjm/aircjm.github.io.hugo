@@ -1,12 +1,15 @@
 baseURL = "/"
-title = "Eureka Demo"
+title = "rimlook blog"
 
 # Comment when installing using Hugo Modules
-theme = "eureka"
+theme = "mainroad"
 # Uncomment when installing using Hugo Modules
 # theme = "github.com/wangchucheng/hugo-eureka"
 
-paginate = 3
+[pagination]
+  pagerSize = 10
+
+
 copyright = "&copy; 2021 <a href=\"https://www.wangchucheng.com/\">C. Wang</a> and <a href=\"https://www.ruiqima.com/\">R. Ma</a>"
 enableEmoji = true
 enableGitInfo = false
