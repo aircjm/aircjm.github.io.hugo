@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>linux命令 scp | </title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="tags: #linux #scp  #每日一学
+linux复制文件和文件夹可以使用 scp命令来进行操作。
+其实也可以使用[[lszrz]]来进行传输文件，但是需要进行安装。考虑自带的[[openssh]]来进行传输文件。
+用法
+scp 参数  源文件 目标文件
+
+➜  /tmp scp    
+usage: scp [-346BCpqrTv] [-c cipher] [-F ssh_config] [-i identity_file]
+            [-J destination] [-l limit] [-o ssh_option] [-P port]
+            [-S program] source ... target
+常用参数：
+-r 递归操作 （支持目录） 
+
+
+-C  压缩
+本地到远程
+scp local_file remote_username@remote_ip:remote_folder 
+或者 
+scp local_file remote_username@remote_ip:remote_file 
+或者 
+scp local_file remote_ip:remote_folder 
+或者 
+scp local_file remote_ip:remote_file
+实例：
+
+远程到本地
+scp remote_username@remote_ip:remote_folder local_file
+或者 
+scp remote_username@remote_ip:remote_file  local_file
+或者 
+scp remote_ip:remote_folder  local_file
+或者 
+scp remote_ip:remote_file local_file
+
+➜  scp_test tree                        
+.
+├── dir
+│?? └── test.txt
+├── test.txt
+└── xxxtmp.log
+
+1 directory, 3 fi
+">
+    <meta name="generator" content="Hugo 0.134.3">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="//localhost:1313/posts/linux%E5%91%BD%E4%BB%A4-scp/">
+    
+
+    <meta property="og:url" content="//localhost:1313/posts/linux%E5%91%BD%E4%BB%A4-scp/">
+  <meta property="og:title" content="linux命令 scp">
+  <meta property="og:description" content="tags: #linux #scp #每日一学
+linux复制文件和文件夹可以使用 scp命令来进行操作。
+其实也可以使用[[lszrz]]来进行传输文件，但是需要进行安装。考虑自带的[[openssh]]来进行传输文件。
+用法 scp 参数 源文件 目标文件 ➜ /tmp scp usage: scp [-346BCpqrTv] [-c cipher] [-F ssh_config] [-i identity_file] [-J destination] [-l limit] [-o ssh_option] [-P port] [-S program] source ... target 常用参数：
+-r 递归操作 （支持目录） -C 压缩 本地到远程 scp local_file remote_username@remote_ip:remote_folder 或者 scp local_file remote_username@remote_ip:remote_file 或者 scp local_file remote_ip:remote_folder 或者 scp local_file remote_ip:remote_file 实例： 远程到本地 scp remote_username@remote_ip:remote_folder local_file 或者 scp remote_username@remote_ip:remote_file local_file 或者 scp remote_ip:remote_folder local_file 或者 scp remote_ip:remote_file local_file ➜ scp_test tree . ├── dir │?? └── test.txt ├── test.txt └── xxxtmp.log 1 directory, 3 fi ">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta itemprop="name" content="linux命令 scp">
+  <meta itemprop="description" content="tags: #linux #scp #每日一学
+linux复制文件和文件夹可以使用 scp命令来进行操作。
+其实也可以使用[[lszrz]]来进行传输文件，但是需要进行安装。考虑自带的[[openssh]]来进行传输文件。
+用法 scp 参数 源文件 目标文件 ➜ /tmp scp usage: scp [-346BCpqrTv] [-c cipher] [-F ssh_config] [-i identity_file] [-J destination] [-l limit] [-o ssh_option] [-P port] [-S program] source ... target 常用参数：
+-r 递归操作 （支持目录） -C 压缩 本地到远程 scp local_file remote_username@remote_ip:remote_folder 或者 scp local_file remote_username@remote_ip:remote_file 或者 scp local_file remote_ip:remote_folder 或者 scp local_file remote_ip:remote_file 实例： 远程到本地 scp remote_username@remote_ip:remote_folder local_file 或者 scp remote_username@remote_ip:remote_file local_file 或者 scp remote_ip:remote_folder local_file 或者 scp remote_ip:remote_file local_file ➜ scp_test tree . ├── dir │?? └── test.txt ├── test.txt └── xxxtmp.log 1 directory, 3 fi ">
+  <meta itemprop="wordCount" content="93">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="linux命令 scp">
+  <meta name="twitter:description" content="tags: #linux #scp #每日一学
+linux复制文件和文件夹可以使用 scp命令来进行操作。
+其实也可以使用[[lszrz]]来进行传输文件，但是需要进行安装。考虑自带的[[openssh]]来进行传输文件。
+用法 scp 参数 源文件 目标文件 ➜ /tmp scp usage: scp [-346BCpqrTv] [-c cipher] [-F ssh_config] [-i identity_file] [-J destination] [-l limit] [-o ssh_option] [-P port] [-S program] source ... target 常用参数：
+-r 递归操作 （支持目录） -C 压缩 本地到远程 scp local_file remote_username@remote_ip:remote_folder 或者 scp local_file remote_username@remote_ip:remote_file 或者 scp local_file remote_ip:remote_folder 或者 scp local_file remote_ip:remote_file 实例： 远程到本地 scp remote_username@remote_ip:remote_folder local_file 或者 scp remote_username@remote_ip:remote_file local_file 或者 scp remote_ip:remote_folder local_file 或者 scp remote_ip:remote_file local_file ➜ scp_test tree . ├── dir │?? └── test.txt ├── test.txt └── xxxtmp.log 1 directory, 3 fi ">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          linux命令 scp
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <article>
+    <header>
+      <h1>
+        
+          linux命令 scp
+        
+      </h1>
+    </header>
+    <section>
+      <p>tags: #linux #scp  #每日一学</p>
+<p>linux复制文件和文件夹可以使用 <code>scp</code>命令来进行操作。</p>
+<p>其实也可以使用[[lszrz]]来进行传输文件，但是需要进行安装。考虑自带的[[openssh]]来进行传输文件。</p>
+<h2 id="用法">用法</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>scp 参数  源文件 目标文件
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>➜  /tmp scp    
+</span></span><span style="display:flex;"><span>usage: scp <span style="color:#f92672">[</span>-346BCpqrTv<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-c cipher<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-F ssh_config<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-i identity_file<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">[</span>-J destination<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-l limit<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-o ssh_option<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-P port<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">[</span>-S program<span style="color:#f92672">]</span> source ... target
+</span></span></code></pre></div><p>常用参数：</p>
+<pre tabindex="0"><code>-r 递归操作 （支持目录） 
+
+
+-C  压缩
+</code></pre><h3 id="本地到远程">本地到远程</h3>
+<pre tabindex="0"><code>scp local_file remote_username@remote_ip:remote_folder 
+或者 
+scp local_file remote_username@remote_ip:remote_file 
+或者 
+scp local_file remote_ip:remote_folder 
+或者 
+scp local_file remote_ip:remote_file
+</code></pre><p>实例：
+<img src="/images/Pasted_image_20220414154531.png" alt="Pasted_image_20220414154531.png"></p>
+<h3 id="远程到本地">远程到本地</h3>
+<pre tabindex="0"><code>scp remote_username@remote_ip:remote_folder local_file
+或者 
+scp remote_username@remote_ip:remote_file  local_file
+或者 
+scp remote_ip:remote_folder  local_file
+或者 
+scp remote_ip:remote_file local_file
+</code></pre><p><img src="/images/Pasted_image_20220414155020.png" alt="Pasted_image_20220414155020.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>➜  scp_test tree                        
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── dir
+</span></span><span style="display:flex;"><span>│?? └── test.txt
+</span></span><span style="display:flex;"><span>├── test.txt
+</span></span><span style="display:flex;"><span>└── xxxtmp.log
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span> directory, <span style="color:#ae81ff">3</span> <span style="color:#66d9ef">fi</span>
+</span></span></code></pre></div>
+    </section>
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="//localhost:1313/" >
+    &copy; 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

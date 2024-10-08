@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <article>
+    <header>
+      <h1>
+        {{ if .Title }}
+          {{ .Title }}
+        {{ else }}
+          {{ .File.TranslationBaseName | humanize | title }}
+        {{ end }}
+      </h1>
+    </header>
+    <section>
+      {{ .Content }}
+    </section>
+  </article>
+{{ end }}
